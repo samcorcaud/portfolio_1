@@ -1,0 +1,63 @@
+body{
+    overflow: hidden;
+}
+
+.Main {
+    background-color: #1D2731;
+    height: 100%;
+}
+
+.Arrow:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#bouton1{
+    float: left;
+}
+
+#bouton3{
+    float: right;
+}
+
+.ButtonLearnMore:hover{
+    opacity: 0.7;
+    background-color: darkorange;
+    height: 80px;
+}
+
+.ButtonLearnMore:hover .Arrow{
+    opacity:1;
+    back: #1D2731;
+}
+
+.ButtonLearnMore {
+    border-color: white;
+    border-radius: 6px;
+    border-size: 50px;
+    box-shadow: #1D2731;
+    background-color: #0B3C5D;
+    padding-left: 10%;
+    transition: 0.2s all;
+
+}
+
+.Text{
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: calc(10px + 2vmin);
+    padding: 0px;
+    font-weight: lighter;
+}
+
+.ButtonLearnMore > button{
+    padding-left: 50%;
+}
+
+.Arrow {
+    opacity: 0;
+    width: 32px;
+    height: 32px;
+    color: #1D2731;
+}

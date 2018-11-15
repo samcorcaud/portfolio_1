@@ -1,26 +1,116 @@
-.App {
-  text-align: center;
+
+body{
+  overflow: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0B3C5D;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10px;
   font-size: calc(10px + 2vmin);
+  height: 5%;
   color: white;
+  top : 0px;
+  transition: 0.5s
+
 }
 
-.App-link {
-  color: #61dafb;
+.App-header:hover{
+  height: 6%;
+  background-color: darkorange;
 }
+
+.App-header:hover .Titre{
+  color: darkorange;
+}
+
+.Logo{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  transition: 0.3s;
+}
+
+.Logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  color: darkorange;
+}
+
+.Home {
+  background-color: #1D2731;
+  height: 95%;
+}
+
+.Titre{
+  color :white;
+  font-size: 50px;
+  position: relative;
+  top: 50%;
+  font-weight: lighter;
+}
+
+.Titre:hover{
+  color: darkorange;
+}
+
+.Button{
+  border-color: white;
+  border-radius: 6px;
+  border-size: 50px;
+  box-shadow: #1D2731;
+  background-color: #0B3C5D;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: calc(10px + 2vmin);
+  position:absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-weight: lighter;
+  transition: 0.2s all;
+
+}
+
+.Arrow {
+  opacity: 0;
+  width: 32px;
+  height: 32px;
+  color: #1D2731;
+}
+
+.Arrow:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.Button:hover{
+  opacity: 0.7;
+  background-color: darkorange;
+  height: 80px;
+}
+
+.Button:hover .Arrow{
+  opacity:1;
+  back: #1D2731;
+}
+
+.Button > span {
+  position: relative;
+  top: 50;
+  transition: all 0.2s;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
