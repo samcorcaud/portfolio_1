@@ -5,7 +5,7 @@ body{
 .Main {
     background-color: #1D2731;
     height: 80%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 
@@ -24,29 +24,18 @@ body{
 }
 
 #academicProject{
-    float: left;
+}
+
+#central{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-outside: 20%;
 }
 
 #contact{
-    float: right;
 }
 
-#buttonBack{
-    margin-bottom: 80%;
-}
-
-.ButtonLearnMore:hover{
-    opacity: 0.7;
-    background-color: darkorange;
-    height: 80px;
-}
-
-.ButtonLearnMore:hover .Arrow{
-    opacity:1;
-    back: #1D2731;
-}
-
-.ButtonLearnMore {
+.ButtonBack{
     border-color: white;
     border-radius: 6px;
     border-size: 50px;
@@ -62,6 +51,59 @@ body{
 
 }
 
+.ButtonBack:hover{
+    margin-bottom: 80%;
+    opacity: 0.7;
+    background-color: darkorange;
+    height: 80px;
+    margin-top: 10px;
+
+
+}
+
+.ButtonLearnMore {
+    border-color: white;
+    border-radius: 6px;
+    border-size: 50px;
+    box-shadow: #1D2731;
+    background-color: #0B3C5D;
+    padding-left: 10%;
+    transition: 0.2s all;
+    width: 270px;
+    height: 40px;
+    margin: 10px;
+    padding: 0px;
+    margin-bottom: 50%;
+
+
+}
+
+.ButtonLearnMore:hover{
+    opacity: 0.7;
+    background-color: darkorange;
+    height: 80px;
+    box-shadow:
+            1px 1px white,
+            2px 2px white,
+            3px 3px white;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+.ButtonLearnMore:hover .Arrow{
+    opacity:1;
+    back: #1D2731;
+    margin-bottom: 40px;
+}
+
+.ButtonLearnMore:hover .Text{
+    margin-top: 40px;
+}
+
+.ButtonLearnMore:hover .TextAcademic{
+    margin-top: 10%;
+}
+
 .Text{
     color: white;
     width: 200px;
@@ -75,8 +117,29 @@ body{
 
 }
 
-#textBack:hover {
+.TextAcademic{
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: calc(10px + 2vmin);
+    font-weight: lighter;
+    bottom: 10px;
+    transform: translateX(-50%);
     opacity: 0.7;
+
+
+}
+
+#textBack {
+    opacity: 0;
+}
+
+.ButtonBack:hover #textBack{
+    opacity: 1;
+}
+
+.ButtonBack > button{
+    padding-left: 50%;
 }
 
 .ButtonLearnMore > button{
@@ -89,3 +152,15 @@ body{
     height: 32px;
     color: #1D2731;
 }
+
+.ArrowUp {
+    opacity: 1;
+    width: 32px;
+    height: 32px;
+    color: #1D2731;
+}
+
+.ArrowUp:hover{
+    transform: scale(1.1);
+}
+

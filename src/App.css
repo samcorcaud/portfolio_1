@@ -120,3 +120,35 @@ body{
     transform: rotate(360deg);
   }
 }
+@keyframes anim {
+  0% {
+  }
+  20% {
+    z-index: 11;
+    \transform: skewX(5deg) translateX(-100%);
+  }
+  40% {
+    transform: skewX(0deg) translateX(0);
+    width: 100%;
+    z-index: 11;
+    box-shadow: 10px 10px 5px #eaeaea;
+  }
+  60% {
+    transform: skewX(3deg) translateX(0);
+    width: 100%;
+    z-index: 11;
+    box-shadow: 10px 10px 5px #eaeaea;
+  }
+  80% {
+    transform: skewX(1deg) translateX(-100%);
+    width: 60%;
+    z-index: 11;
+    box-shadow: 10px 10px 5px #eaeaea;
+  }
+  100% {
+    transform: skewX(-5deg) translateX(-50px);
+    width: 30%;
+    z-index: 1;
+    box-shadow: none;
+  }
+}

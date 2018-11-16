@@ -5,7 +5,9 @@ import Mail from './Images/mail.svg';
 import ArrowDown from './Images/arrowDown.svg';
 
 
+
 export class Home extends Component {
+
     render(){
         return (
            <div className="App">
@@ -23,9 +25,11 @@ export class Home extends Component {
                        <span>Hello, I'm Samuel</span>
                    </div>
                    <button className="Button">
+                       {/*// On se refere a la fonction situé dans le parent, le props set à ce que l'enfant seche que
+                       la fonction a été passé par le parent*/}
                        <span>Learn more</span>
                        <br/>
-                       <img src={ArrowDown} className="Arrow"/>
+                       <img src={ArrowDown} className="Arrow"  onClick={this.props.showLearnMore}/>
                    </button>
                </div>
            </div>

@@ -5,9 +5,11 @@ import './LearnMore.css';
 import ArrowDown from "./Images/arrowDown.svg";
 import Linkedin from "./Images/linkedin.svg";
 import Mail from "./Images/mail.svg";
+import ArrowUp from './Images/arrowUp.svg'
 
 export class LearnMore extends Component{
     render(){
+        console.log('Reee')
         return(
           <div className= 'App'>
               <div className="App-header">
@@ -20,22 +22,21 @@ export class LearnMore extends Component{
                   </a>
               </div>
               <div className="Main" id="back">
-                  <button className="ButtonLearnMore" id="buttonBack" >
-                      <img src={ArrowDown} className="Arrow"/>
-
+                  <button className="ButtonBack">
+                      <img src={ArrowUp} className="ArrowUp" onClick={this.props.showHome}/>
+                      <br/>
                       <span className="Text" id="textBack">Back</span>
-                      {/*Laisser le bouton avec Back dessus avec la fleche transparence 100% puis lorsque la souris passe*/}
-                      {/*dessus texte disparait et fleche apparait position relative ou bloqué des deux elements div*/}
                   </button>
               </div>
               <div className='Main'>
-
                   <button className="ButtonLearnMore" id="academicProject">
                       <span className="Text">Academic Project</span>
                       <br/>
                       <img src={ArrowDown} className="Arrow"/>
+                      <br/>
+                      <span className="TextAcademic">Premier projet</span>
                   </button>
-                  <button className="ButtonLearnMore" >
+                  <button className="ButtonLearnMore" id="central" >
                       <span className="Text">Experience</span>
                       <br/>
                       <img src={ArrowDown} className="Arrow"/>
